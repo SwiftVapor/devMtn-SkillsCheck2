@@ -13,11 +13,11 @@ export default class App extends Component {
         inventory:[]
       }
   }
-  componentDidMount (){
-    axios.get ('/api/products')
+  componentDidMount(){
+    axios.get('/api/products')
     .then(res => {
       this.setState({inventory: res.data})
-      console.log (this.state.inventory)
+      console.log (this.inventory)
     })
     .catch(err => console.log(err));
   }

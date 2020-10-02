@@ -13,8 +13,9 @@ export default function Dashboard (props) {
 
 
     return (
-        <div>
-
+        <div className= 'dashboard'>
+            {/* <button onClick={() => console.log(props.inventory)} >Test</button> */}
+            {/* {props.inventory} */}
         </div>
     )
 }
